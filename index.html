@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopegate Institute Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Hopegate Institute Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to help us serve you better</p>
+    <div class="whole">
+    <form id="survey-form" action="">
+    <fieldset>
+        <div class="form-sect">
+            <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+        </div>
+
+        <div class="form-sect">
+            <label id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required></label>
+        </div>
+
+        <div class="form-sect">
+            <label id="number-label">Age <input type="number" placeholder="Enter your age" id="number" min="13" max="120"></label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="form-sect">
+            <label>What program are you currently enrolled in? 
+            <select name="program" placeholder="select your program" id="dropdown">
+                <option>Select your program</option>
+                <option>School of Data</option>
+                <option>School of Engineering</option>
+                <option>School of Business Analysis</option>
+                <option>School of Management</option>
+                <option>School of Leadership</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="form-sect">
+            <label>Would you recommend Hopegate Institute to a friend? <br><br><input type="radio" class="sameline" name="recommend" value="definitely" checked /> Definitely</label>
+            <label><input type="radio" class="sameline" name="recommend" value="maybe" /> Maybe</label>
+            <label><input type="radio" class="sameline" name="recommend" value="notsure" /> Not sure</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="form-sect">
+            <label>What is your favourite feature of Hopegate Institute Training?
+            <select id="dropdown">
+                <option>select favourite</option>
+                <option>Peer learning</option>
+                <option>Live classes</option>
+                <option>In-Person classes</option>
+                <option>Mentorship session</option>
+                <option>Group projects</option>
+                <option>Personal projects</option>
+                <option>Other</option>
+                
+        </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="form-sect">
+            <label>What would you like to see improved?</label>
+            <label><input class="sameline" type="checkbox" value="timetable">Lecture timetable</label>
+            <label><input type="checkbox" class="sameline" value="transport">School Transport System</label>
+            <label><input type="checkbox" class="sameline" value="cafeteria">Cafeteria</label>
+            <label><input type="checkbox" class="sameline" value="sports">Sports Center</label>
+            <label><input type="checkbox" class="sameline" value="gym">Gym</label>
+            <label><input type="checkbox" class="sameline" value="security">Security</label>
+            <label><input type="checkbox" class="sameline" value="others">Others</label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <div class="form-sect">
+            <label>Any comments or suggestions? <textarea cols="30" rows="10" placeholder="I would like to suggest that..."></textarea>
+        </div>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+
+    </form>
+    </div>
+</body>
+</html>
